@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Ruchome linie (łamigłówka)</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Kalam:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <!-- Fontello -->
+    <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+
+    <!-- Site JS -->
+    <script src="script.js"></script>
+
+    <!-- Site CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+    <div id="header">
+        <h1>~ Ruchome linie ~</h1>
+        <p>Celem łamigłówki jest umieszczenie kul na polach o odpowiadających kulom kolorach. Gracz może przesuwać całą
+            kolumnę w pionie lub poziomie. Gra standardowo w wymiarze 4x4. Można ustawić ilość wierszy i kolumn od 3 do
+            6.
+            W podstawowej wersji wszystkie pola w danej kolumnie są w tym samym kolorze. Można wybrać planszę o losowym
+            rozstawieniu kolorów. Poziom gry wtedy jest znacznie trudniejszy.</p>
+    </div> <!-- end #header -->
+
+    <div id="info">
+        <div class="info_score">
+            <div class="score_div">
+                <div class="score_txt"><h2>Wynik:</h2></div>
+                <div class="score_result">0000</div>
+            </div>
+        </div>
+        <div class="info_solution">
+            <div class="solution_div">
+                <div class="solution_img"><h4>Rozwiązanie:</h4><img src="img/solution.png"></div>
+            </div>
+        </div>
+        <div class="info_newend">
+            <div class="newend_div">
+                <button class="newend_new"><a href="index.html">Nowa gra</a></button>
+                <button class="newend_end"><a onclick="self.close()">Koniec</a></button>
+            </div>
+        </div>
+    </div> <!-- end #info -->
+
+    <div id="game">
+        <div class="game_div">
+
+            <div class="line1_box">
+                <div class="line1"></div>
+                <div class="line1" onclick="click_arrow(1, 1, 'up')"><i class="icon-up"></i></div>
+                <div class="line1" onclick="click_arrow(1, 2, 'up')"><i class="icon-up"></i></div>
+                <div class="line1" onclick="click_arrow(1, 3, 'up')"><i class="icon-up"></i></div>
+                <div class="line1" onclick="click_arrow(1, 4, 'up')"><i class="icon-up"></i></div>
+                <div class="line1"></div>
+            </div>
+
+            <div class="line2_box">
+                <div class="line2" onclick="click_arrow(2, 1, 'left')"><i class="icon-left"></i></div>
+                <div class="line2"></div>
+                <div class="line2"></div>
+                <div class="line2"></div>
+                <div class="line2"></div>
+                <div class="line2" onclick="click_arrow(2, 2, 'right')"><i class="icon-right"></i></div>
+            </div>
+
+            <div class="line3_box">
+                <div class="line3" onclick="click_arrow(3, 1, 'left')"><i class="icon-left"></i></div>
+                <div class="line3"></div>
+                <div class="line3"></div>
+                <div class="line3"></div>
+                <div class="line3"></div>
+                <div class="line3" onclick="click_arrow(3, 2, 'right')"><i class="icon-right"></i></div>
+            </div>
+
+            <div class="line4_box">
+                <div class="line4" onclick="click_arrow(4, 1, 'left')"><i class="icon-left"></i></div>
+                <div class="line4"></div>
+                <div class="line4"></div>
+                <div class="line4"></div>
+                <div class="line4"></div>
+                <div class="line4" onclick="click_arrow(4, 2, 'right')"><i class="icon-right"></i></div>
+            </div>
+
+            <div class="line5_box">
+                <div class="line5" onclick="click_arrow(5, 1, 'left')"><i class="icon-left"></i></div>
+                <div class="line5"></div>
+                <div class="line5"></div>
+                <div class="line5"></div>
+                <div class="line5"></div>
+                <div class="line5" onclick="click_arrow(5, 2, 'right')"><i class="icon-right"></i></div>
+            </div>
+
+            <div class="line6_box">
+                <div class="line6"></div>
+                <div class="line6" onclick="click_arrow(6, 1, 'down')"><i class="icon-down"></i></div>
+                <div class="line6" onclick="click_arrow(6, 2, 'down')"><i class="icon-down"></i></div>
+                <div class="line6" onclick="click_arrow(6, 3, 'down')"><i class="icon-down"></i></div>
+                <div class="line6" onclick="click_arrow(6, 4, 'down')"><i class="icon-down"></i></div>
+                <div class="line6"></div>
+            </div>
+
+        </div> <!-- end .game_div -->
+    </div> <!-- end #game -->
+
+    <div id="footer_end">Created by <span style="color:#FCEE09">&copy;hello2077world</span> | 2019</div>
+
+</div> <!-- end #container -->
+
+<div id="prv-billboard"></div> <!-- reklamy prv.pl -->
+
+</body>
+</html>

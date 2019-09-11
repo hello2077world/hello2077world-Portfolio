@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Wieże Hanoi</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <!-- Site JS -->
+    <script src="script.js"></script>
+
+    <!-- Site CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="container">
+
+    <div id="header">
+        <h1>Wieże Hanoi</h1>
+        <p><span style="color: yellow">Wieże Hanoi</span> – to stara klasyczna gra znana już w XIX wieku. Podstawową
+            zasadą ułożenia łamigłówki jest
+            przeniesienie krążków z pierwszego słupka na trzeci, stosując się do reguły kładąc mniejszy krążek na
+            większy oraz kolorami na przemian. Środkowy słupek przeznaczony jest tylko do tymczasowej pomocy. W praktyce
+            gra ta często stosowana jest przez psychologów jako doskonałe ćwiczenie na kojarzenie.</p>
+    </div>
+
+    <div id="info">
+        <div class="info_score">
+            <div class="info_score_txt">Wynik:</div>
+            <div class="info_score_points">0000</div>
+        </div>
+        <div class="info_select"><h2>Wybierz:</h2>
+            <form>
+                <label for="input_one"><input id="input_one" name="wybierz" type="radio" value="3 bloki"> 3
+                    bloki</label>
+                <label for="input_two"><input id="input_two" name="wybierz" type="radio" value="4 bloki" checked> 4
+                    bloki</label>
+                <label for="input_three"><input id="input_three" name="wybierz" type="radio" value="6 bloków" > 6 bloków</label>
+            </form>
+        </div>
+        <div class="info_buttons">
+            <button class="button_new"><a onclick="new_game()">Nowa gra</a></button>
+            <button class="button_end"><a onclick="self.close()">Koniec</a></button>
+        </div>
+    </div>
+
+    <div id="game">
+        <div class="game_box">
+
+            <div id="turret1_box">
+                <div class="turret_block_catch hidden"></div>
+                <div id="turret1" onclick="click_turret(1)"><div class="block1"></div><div class="block2"></div><div class="block3"></div><div class="block4"></div><div class="block5"></div><div class="block6"></div></div>
+                <div class="turret1_floor"></div>
+            </div>
+
+            <div id="turret2_box">
+                <div class="turret_block_catch hidden"></div>
+                <div id="turret2" onclick="click_turret(2)"></div>
+                <div class="turret2_floor"></div>
+            </div>
+
+            <div id="turret3_box">
+                <div class="turret_block_catch hidden"></div>
+                <div id="turret3" onclick="click_turret(3)"></div>
+                <div class="turret3_floor"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_end">Created by <span style="color:#FCEE09">&copy;hello2077world</span> | 2019</div>
+
+</div> <!-- end #container -->
+
+<div id="prv-billboard"></div> <!-- reklamy prv.pl -->
+
+</body>
+</html>

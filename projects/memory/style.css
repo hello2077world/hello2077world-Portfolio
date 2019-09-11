@@ -1,0 +1,157 @@
+body {
+	background-color: #303030;
+	color: white;
+	font-family: 'Eagle Lake', cursive;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}
+
+#container {
+	margin: 10px auto 0px auto;
+	width: 1500px;
+	height: 905px;
+}
+
+#header {
+	padding: 0px 20px 5px 20px;
+	border: 1px solid yellow;
+	margin: 0px;
+	height: 225px;
+	width: 1460px;
+}
+
+#header>h1 {
+	text-align: center;
+	font-weight: bolder;
+}
+
+#header>p::first-letter {
+	margin-left: 50px;
+}
+
+#mainbox {
+	width: 1500px;
+	height: 665px;
+}
+
+#aside {
+	float: left;
+	height: 615px;
+	width: 375px;
+	margin: 15px 0px 15px 0px;
+	padding: 15px;
+	border: 1px solid orange;
+}
+
+#score {
+	font-size: 40px;
+	margin: 0 auto 0 auto;
+	height: 158px;
+	width: 345px;
+	text-align: center;
+	padding: 20px 15px 15px 15px;
+}
+
+#score_int {
+	font-size: 30px;
+	margin: 25px auto 0 auto;
+	border: 2px solid green;
+	width: 280px;
+	padding: 5px 15px 5px 15px;
+}
+
+#gratz {
+	margin: 0px auto 15px auto;
+	height: 250px;
+	width: 75%;
+	padding: 15px;
+	font-size: 28px;
+}
+
+#gratz::first-letter {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#click {
+	text-align: center;
+	padding: 15px;
+	height: 75px;
+	width: 75%;
+	margin: 15px auto 0px auto;
+	border: 2px solid blue;
+}
+
+#newgame_button {
+	background-color: grey;
+	width: 200px;
+}
+
+#newgame_button>a {
+	display: block;
+}
+
+#endgame_button {
+	background-color: grey;
+	width: 200px;
+}
+
+#endgame_button>a {
+	display: block;
+}
+
+#game {
+	height: 645px;
+	width: 1074px;
+	float: right;
+	margin: 15px 0px 15px 15px;
+	border: 2px solid #820000;
+	position: relative;
+}
+
+.cards {
+	background-color: gray;
+	width: 136px;
+	height: 90px;
+	margin: 15px 0px 0 15px;
+	float: left;
+	text-align: center;
+}
+
+.cards>img {
+	margin-top: 10px;
+	display: none;
+}
+
+.show>img {
+	display: inline;
+	text-align: center;
+}
+
+.correct {
+	background-color: #303030;
+}
+
+.correct>img {
+	display: none;
+}
+
+.hidden>img {
+	display: none;
+}
+
+#footer_end {
+	border: 1px solid cyan;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1500px;
+    text-align: center;
+	margin: 0 auto;
+	font-size: 0.85em;	
+}

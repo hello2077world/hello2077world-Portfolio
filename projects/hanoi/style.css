@@ -1,0 +1,701 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #210308;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/*-------------------------------------------*/
+/* container */
+
+#container {
+    /*border: 1px solid cyan;*/
+    margin: 0 auto;
+    font-size: 19px;
+}
+
+/*-------------------------------------------*/
+/* header */
+
+#header {
+    /*border: 1px solid limegreen;*/
+    height: 25%;
+    padding-top: 1%;
+}
+
+#header > h1 {
+    background-color: steelblue;
+    color: #210308;
+    text-align: center;
+}
+
+#header > p {
+    padding: 0.5% 2% 0 2%
+}
+
+#header > p:first-letter {
+    margin-left: 2%;
+    font-size: 1.5em;
+}
+
+/*-------------------------------------------*/
+/* info */
+
+#info {
+    /*border: 1px solid hotpink;*/
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------*/
+/* .info_score */
+
+.info_score {
+    border-top: 1px dashed lightsalmon;
+    border-bottom: 1px dashed lightsalmon;
+    border-right: 1px dashed lightsalmon;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5em;
+}
+
+.info_score_txt {
+
+}
+
+.info_score_points {
+
+}
+
+/*----------------*/
+/* .info_select */
+
+.info_select {
+    border-top: 1px dashed lightsalmon;
+    border-bottom: 1px dashed lightsalmon;
+    border-right: 1px dashed lightsalmon;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info_select > form {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info_select > form > label {
+    font-size: 1.4em;
+}
+
+/*----------------*/
+/* .info_buttons */
+
+.info_buttons {
+    border-top: 1px dashed lightsalmon;
+    border-bottom: 1px dashed lightsalmon;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button_new {
+    background-color: #5f3f54;
+    color: white;
+    width: 75%;
+    height: 15%;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(253, 190, 43, 1);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(253, 190, 43, 1);
+    box-shadow: 2px 3px 5px 0px rgba(253, 190, 43, 1);
+    margin-bottom: 7%;
+    font-size: 1em;
+    transition: all 300ms;
+}
+
+.button_new:hover {
+    background-color: #7e536f;
+}
+
+.button_new > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.button_end {
+    background-color: #5f3f54;
+    color: white;
+    width: 75%;
+    height: 15%;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(253, 190, 43, 1);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(253, 190, 43, 1);
+    box-shadow: 2px 3px 5px 0px rgba(253, 190, 43, 1);
+    font-size: 1em;
+    transition: all 300ms;
+}
+
+.button_end:hover {
+    background-color: #7e536f;
+}
+
+.button_end > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/*-------------------------------------------*/
+/* game */
+
+#game {
+    /*border: 1px solid crimson;*/
+    height: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_box {
+    /*border: 1px solid cyan;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------*/
+/* turret1 */
+
+#turret1_box {
+    /*border: 1px solid hotpink;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#turret1 {
+    /*border: 1px solid cyan;*/
+    height: 100%;
+    width: 90%;
+    position: relative;
+}
+
+.turret1_floor {
+    background-color: dimgrey;
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 11px;
+    margin: auto;
+}
+
+/*----------------*/
+/* turret2 */
+
+#turret2_box {
+    /*border: 1px solid navajowhite;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#turret2 {
+    /*border: 1px solid cyan;*/
+    height: 100%;
+    width: 90%;
+    position: relative;
+}
+
+.turret2_floor {
+    background-color: dimgrey;
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 11px;
+    margin: auto;
+}
+
+/*----------------*/
+/* turret3 */
+
+#turret3_box {
+    /*border: 1px solid steelblue;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#turret3 {
+    /*border: 1px solid cyan;*/
+    height: 100%;
+    width: 90%;
+    position: relative;
+}
+
+.turret3_floor {
+    background-color: seagreen;
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 11px;
+    margin: auto;
+}
+
+/*----------------*/
+/* .block$ */
+
+.block1 {
+    background-color: #fad320;
+    position: absolute;
+    width: 25%;
+    height: 35px;
+    margin: auto;
+}
+
+.block2 {
+    background-color: #f3c805;
+    position: absolute;
+    width: 37.5%;
+    height: 35px;
+    margin: auto;
+}
+
+.block3 {
+    background-color: #d2ad04;
+    position: absolute;
+    width: 50%;
+    height: 35px;
+    margin: auto;
+}
+
+.block4 {
+    background-color: #b09104;
+    position: absolute;
+    width: 62.5%;
+    height: 35px;
+    margin: auto;
+}
+
+.block5 {
+    background-color: #8f7603;
+    position: absolute;
+    width: 75%;
+    height: 35px;
+    margin: auto;
+}
+
+.block6 {
+    background-color: #6e5a02;
+    position: absolute;
+    width: 87.5%;
+    height: 35px;
+    margin: auto;
+}
+
+.turret_block_catch {
+    background-color: rgb(138, 126, 120, 0.25);
+    position: absolute;
+    width: 92.5%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/*----------------*/
+/* .block$ - position */
+
+.block6_position {
+    top: 68.5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.block5_position {
+    top: 51.5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.block4_position {
+    top: 34.5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.block3_position {
+    top: 17.5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.block2_position {
+    top: 0.5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.block1_position {
+    top: -16.5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*-------------------------------------------*/
+/* footer */
+
+#footer_end {
+    /*border: 1px solid peru;*/
+    height: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.win {
+    font-size: 3em;
+}
+
+.win:first-letter {
+    font-size: 1.5em;
+}
+
+/*-------------------------------------------*/
+/* media queries */
+
+/*##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops */
+@media (min-width: 1281px) {
+    #container {
+        width: 1276px;
+        height: 900px;
+        font-size: 1.47em;
+    }
+
+    /* Styles */
+}
+
+/*##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #container {
+        width: 1020px;
+        height: 802px;
+        font-size: 1.2em;
+    }
+
+    .turret1_floor {
+        height: 10px;
+    }
+
+    .turret2_floor {
+        height: 10px;
+    }
+
+    .turret3_floor {
+        height: 10px;
+    }
+
+    .block1 {
+        height: 31px;
+    }
+
+    .block2 {
+        height: 31px;
+    }
+
+    .block3 {
+        height: 31px;
+    }
+
+    .block4 {
+        height: 31px;
+    }
+
+    .block5 {
+        height: 31px;
+    }
+
+    .block6 {
+        height: 31px;
+    }
+
+    .turret_block_catch {
+        height: 36px;
+    }
+
+    /* Styles */
+}
+
+/*##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #container {
+        width: 763px;
+        height: 802px;
+        font-size: 1.2em;
+    }
+
+    .turret1_floor {
+        height: 10px;
+    }
+
+    .turret2_floor {
+        height: 10px;
+    }
+
+    .turret3_floor {
+        height: 10px;
+    }
+
+    .block1 {
+        height: 31px;
+    }
+
+    .block2 {
+        height: 31px;
+    }
+
+    .block3 {
+        height: 31px;
+    }
+
+    .block4 {
+        height: 31px;
+    }
+
+    .block5 {
+        height: 31px;
+    }
+
+    .block6 {
+        height: 31px;
+    }
+
+    .turret_block_catch {
+        height: 36px;
+    }
+
+    /* Styles */
+}
+
+/*##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #container {
+        width: 763px;
+        height: 802px;
+        font-size: 1.2em;
+    }
+
+    .turret1_floor {
+        height: 10px;
+    }
+
+    .turret2_floor {
+        height: 10px;
+    }
+
+    .turret3_floor {
+        height: 10px;
+    }
+
+    .block1 {
+        height: 31px;
+    }
+
+    .block2 {
+        height: 31px;
+    }
+
+    .block3 {
+        height: 31px;
+    }
+
+    .block4 {
+        height: 31px;
+    }
+
+    .block5 {
+        height: 31px;
+    }
+
+    .block6 {
+        height: 31px;
+    }
+
+    .turret_block_catch {
+        height: 36px;
+    }
+
+
+
+    /* Styles */
+}
+
+/*##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    #container {
+        width: 476px;
+        height: 802px;
+        font-size: 0.97em;
+    }
+
+    .game_box {
+        flex-direction: column;
+    }
+
+    .turret1_floor {
+        height: 3px;
+    }
+
+    .turret2_floor {
+        height: 3px;
+    }
+
+    .turret3_floor {
+        height: 3px;
+    }
+
+    .block1 {
+        height: 9.5px;
+    }
+
+    .block2 {
+        height: 9.5px;
+    }
+
+    .block3 {
+        height: 9.5px;
+    }
+
+    .block4 {
+        height: 9.5px;
+    }
+
+    .block5 {
+        height: 9.5px;
+    }
+
+    .block6 {
+        height: 9.5px;
+    }
+
+    .turret_block_catch {
+        height: 10.5px;
+    }
+
+    /* Styles */
+}
+
+/*##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    #container {
+        width: 95%;
+        height: 802px;
+        font-size: 0.84em;
+    }
+
+    .game_box {
+        flex-direction: column;
+    }
+
+    .turret1_floor {
+        height: 3px;
+    }
+
+    .turret2_floor {
+        height: 3px;
+    }
+
+    .turret3_floor {
+        height: 3px;
+    }
+
+    .block1 {
+        height: 9.5px;
+    }
+
+    .block2 {
+        height: 9.5px;
+    }
+
+    .block3 {
+        height: 9.5px;
+    }
+
+    .block4 {
+        height: 9.5px;
+    }
+
+    .block5 {
+        height: 9.5px;
+    }
+
+    .block6 {
+        height: 9.5px;
+    }
+
+    .turret_block_catch {
+        height: 10.5px;
+    }
+
+
+    /* Styles */
+}

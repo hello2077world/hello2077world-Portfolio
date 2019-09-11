@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Piętnastka (uloz liczby od 1 do 15)</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+
+    <!-- Site JS -->
+    <script src="script.js"></script>
+
+    <!-- Site CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="container">
+    <div id="header">
+        <h1>~ Piętnastka ~</h1>
+        <p>Piętnastka to układanka zbudowana z pudełka, w którym znajduje się piętnaście płytek o jednakowych
+            rozmiarach ułożonych w kwadrat 4×4 i ponumerowanych od 1 do 15. Jedno miejsce pozostaje puste i
+            umożliwia przesuwanie sąsiednich płytek względem siebie. Celem gry jest uporządkowanie przetasowanych
+            płytek. W pojedynczym ruchu można przemieścić jedną płytkę na puste miejsce. Łamigłówka ta znana pod
+            angielską nazwą Fifteen Puzzle, pochodzi z Ameryki i znana była w XIX w.</p>
+    </div> <!-- end #header -->
+    <div id="aside">
+
+        <div id="score_box">Wynik
+            <div id="score">000</div>
+        </div> <!-- end #score_box -->
+
+        <div id="solution_box">Rozwiązanie:
+            <img src="img/example.PNG">
+        </div> <!-- end #solution_box -->
+
+        <div id="newend_box">
+            <a href="index.html"><button id="new_box">Nowa gra</button></a>
+            <a><button id="end_box" onclick="self.close()">Koniec</button></a>
+        </div> <!-- end #newend_box -->
+
+    </div> <!-- end #aside -->
+    <div id="game">
+        <div id="game_box" >
+            <div class="num_box show_class" onclick="click_func(0)"></div>
+            <div class="num_box show_class" onclick="click_func(1)"></div>
+            <div class="num_box show_class" onclick="click_func(2)"></div>
+            <div class="num_box show_class" onclick="click_func(3)"></div>
+            <div style="clear: both;"></div>
+            <div class="num_box show_class" onclick="click_func(4)"></div>
+            <div class="num_box show_class" onclick="click_func(5)"></div>
+            <div class="num_box show_class" onclick="click_func(6)"></div>
+            <div class="num_box show_class" onclick="click_func(7)"></div>
+            <div style="clear: both;"></div>
+            <div class="num_box show_class" onclick="click_func(8)"></div>
+            <div class="num_box show_class" onclick="click_func(9)"></div>
+            <div class="num_box show_class" onclick="click_func(10)"></div>
+            <div class="num_box show_class" onclick="click_func(11)"></div>
+            <div style="clear: both;"></div>
+            <div class="num_box show_class" onclick="click_func(12)"></div>
+            <div class="num_box show_class" onclick="click_func(13)"></div>
+            <div class="num_box show_class" onclick="click_func(14)"></div>
+            <div class="num_box show_class" onclick="click_func(15)"></div>
+            <div style="clear: both;"></div>
+        </div> <!-- end #game_box -->
+    </div> <!-- end #game -->
+    <div style="clear: both"></div>
+    <div id="footer_end">Created by <span style="color:#FCEE09">&copy;hello2077world</span> | 2019</div>
+
+</div> <!-- end #container -->
+
+<div id="prv-billboard"></div> <!-- reklamy prv.pl -->
+
+</body>
+</html>
